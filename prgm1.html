@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Event Registration Form</title>
+<style>
+body{
+font-family:Arial,sans-serif;
+background-color:#f4f4f3;
+display:flex;
+justify-content:center;
+align-items:center;
+height:100vh;
+margin:0;
+}
+.registration.form{
+background-color:#fff;
+padding:20px;o
+border-radius:8px;
+box-shadow:0010px rgba(0,0,0,0.1);
+width:300px;
+}
+.registration-form h2{
+margin-bottom:20px;
+font-size:24px;
+color:#333;
+}
+form-group{
+margin-bottom:15px;
+}
+form-group label{
+display:block;
+margin-bottom:5px;
+color:#555;
+}
+.form-group input,form-group select
+{
+width:100%;
+padding:8px;
+border:1px solid#ddd;
+border-radius:10px;
+}
+.form-group button{
+width:100%;
+padding:10px;
+background-color:#28a745;
+border:none;
+border-radius:4px;
+color:#fff;
+font-size:16px;
+cursor:pointer;
+}
+</style>
+</head>
+<body>
+<div classs="registration-form">
+<h2>Event Registration</h2>
+<form action="/Submit" method="post">
+<div class="form-group">
+<label input="name">Fullname</label>
+<input type="text" id="name" name="name" required>
+</div>
+<div class="form-group">
+<label input="email">Email</label>
+<input type="email" id="email" name="email" required>
+</div>
+<div class="form-group">
+<label input="event">Event</label>
+<select id="event" name="event" required>
+<option value=" ">select Event</option>
+<option value="event 1">Paper Presentation</option>
+<option value="event 2">Poster Presentation</option>
+<option value="event 3">Project expo</option>
+</select>
+</div>
+<div class="form-group">
+<button type="submit">Register</button>
+</div>
+</form>
+</div>
+</body>
+</html>
